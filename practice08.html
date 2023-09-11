@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bootstrap Practice 08</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./assets/css/practice08.css" />
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="./assets/img/tpro-logo.svg" height="50" /></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+        aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasExampleLabel">
+            TechPro Education LMS
+          </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body justify-content-end">
+          <ul class="navbar-nav mb-2 mb-lg-0 gap-3 me-4">
+            <li class="nav-item">
+              <a class="nav-link d-flex align-items-center" aria-current="page" href="#"><i
+                  class="fa-regular fa-eye-slash m-auto p-0"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link d-flex align-items-center" aria-current="page" href="#"><i
+                  class="fa-regular fa-bell m-auto p-0"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link d-none d-lg-flex align-items-center" aria-current="page" href="#"><i
+                  class="fa-regular fa-comments m-auto p-0"></i></a>
+              <a class="d-lg-none" href="#">Yorumlar</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link d-flex align-items-center" aria-current="page" href="#"><i
+                  class="fa-solid fa-gear m-auto p-0"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link d-flex align-items-center" aria-current="page" href="#"><i
+                  class="fa-solid fa-s m-auto p-0"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="3000">
+        <img src="./assets/img/slide01.jpg" class="d-block w-100" alt="..." />
+        <div class="carousel-caption d-none d-md-block">
+          <h5>First slide label</h5>
+          <p>Some representative placeholder content for the first slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="./assets/img/slide02.jpg" class="d-block w-100" alt="..." />
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Second slide label</h5>
+          <p>Some representative placeholder content for the second slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="./assets/img/slide03.jpg" class="d-block w-100" alt="..." />
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Third slide label</h5>
+          <p>Some representative placeholder content for the third slide.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <div class="container my-4">
+    <div class="row align-items-center">
+      <div class="col-lg-5">
+        <img src="./assets/img/res-01.jpg" class="img-fluid" />
+      </div>
+      <div class="col-lg-7 fs-5">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          Perferendis, quo? Accusantium, enim vero velit aperiam nostrum
+          ducimus totam cumque labore repudiandae, praesentium ipsum quo ipsa
+          animi quibusdam veritatis. Illo, maiores!
+        </p>
+        <p>
+          Fugiat qui distinctio laboriosam, eum voluptatibus neque tenetur
+          saepe omnis alias ullam maiores, placeat quasi totam veniam velit
+          assumenda hic odit nihil recusandae repudiandae in natus! Eaque
+          voluptatibus reprehenderit eligendi.
+        </p>
+        <p>
+          Praesentium voluptas quibusdam repudiandae placeat sint, eos magnam
+          mollitia provident beatae suscipit molestiae, natus animi vitae
+          possimus nisi accusantium atque dolor nulla facere laudantium!
+          Cupiditate eligendi fuga illum quas voluptatem.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="container mb-4">
+    <h2 class="text-center mb-4">ÖNE ÇIKANLAR</h2>
+    <div class="row">
+      <div class="col-12 col-md-6 col-lg-4 mb-2">
+        <div class="card">
+          <img src="./assets/img/apartman-dis-mekan-01-thumb.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title text-center">Dış Mekan - 1</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up
+              the bulk of the card's content.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4 mb-2">
+        <div class="card">
+          <img src="./assets/img/apartman-dis-mekan-02-thumb.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title text-center">Dış Mekan - 2</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up
+              the bulk of the card's content.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4 mb-2">
+        <div class="card">
+          <img src="./assets/img/apartman-dis-mekan-03-thumb.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title text-center">Dış Mekan - 3</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up
+              the bulk of the card's content.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4 mb-2">
+        <div class="card">
+          <img src="./assets/img/apartman-dis-mekan-04-thumb.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title text-center">Dış Mekan - 4</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up
+              the bulk of the card's content.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4 mb-2">
+        <div class="card">
+          <img src="./assets/img/apartman-dis-mekan-05-thumb.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title text-center">Dış Mekan - 5</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up
+              the bulk of the card's content.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4 mb-2">
+        <div class="card">
+          <img src="./assets/img/apartman-dis-mekan-06-thumb.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title text-center">Dış Mekan - 6</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up
+              the bulk of the card's content.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

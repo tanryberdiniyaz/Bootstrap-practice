@@ -1,0 +1,17 @@
+:root {
+  --color1: #ebb211;
+  --color2: #000;
+  --color3: #04d5fa;
+}
+.topbar {
+  background-color: var(--color1);
+}
+.topbar a {
+  color: var(--color2);
+  font-size: 1rem;
+  text-decoration: none;
+}
+.topbar a i {
+  color: var(--color3);
+  font-size: 1.2rem;
+}
